@@ -1,0 +1,178 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for visiting",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What hours are you open?",
+        "What are your hours?",
+        "When are you open?"
+      ],
+      "responses": [
+        "We're open every day from 9am-9pm",
+        "Our hours are 9am-9pm every day"
+      ]
+    },
+    {
+      "tag": "opentoday",
+      "patterns": [
+        "Are you open today?",
+        "When do you open today?",
+        "What are your hours today?"
+      ],
+      "responses": [
+        "We're open every day from 9am-9pm",
+        "Our hours are 9am-9pm every day"
+      ]
+    },
+    {
+      "tag": "HSOmonitoring",
+      "patterns": [
+        "What can you do",
+        "What will this bot do?",
+        "What can I do",
+        "help",
+        "What will the bot do",
+        "Tell me all features the bot can do?"
+      ],
+      "responses": [
+        "Hello, I'm HSO monitor, I can do a lot of stuff...\\n1)Load,show,modify collector-target-credential configuration\\n2)Post a Collection configuration\\n3)Collection output analyzer and graph the same\\n4)Many more features are being developed..."
+      ]
+    },
+    {
+      "tag": "sumuyesterday",
+      "patterns": [
+        "Was sumu here yesterday",
+        "Did sumu visit yesterday",
+        "sumu was here?"
+      ],
+      "responses": [
+        "Sumu will be here",
+        "Sumu will be here and was be here"
+      ]
+    },
+    {
+      "tag": "HSO",
+      "patterns": [
+        "Who is best in HSO",
+        "What is HSO",
+        "HSO?"
+      ],
+      "responses": [
+        "Hyper Scale Team",
+        "Hyper Scale Obserability"
+      ]
+    },
+    {
+      "tag": "StartMonitoring",
+      "patterns": [
+        "Start monitoring",
+        "Monitor my",
+        "HSO?"
+      ],
+      "responses": [
+        "Hyper Scale Team",
+        "Hyper Scale Obserability"
+      ]
+    },
+    {
+      "tag": "Draw line Chart",
+      "patterns": [
+        "Draw line chart",
+        "Draw a line chart for the collection",
+        "Monitor collection with line chart",
+        "Monitor collection using chart"
+      ],
+      "responses": [
+        "Line Chart"
+      ]
+    },
+    {
+      "tag": "Draw pie Chart",
+      "patterns": [
+        "Draw pi chart",
+        "Draw a pie chart for the collection",
+        "Monitor collection with pie chart",
+        "Monitor collection using pie chart"
+      ],
+      "responses": [
+        "Pie Chart"
+      ]
+    },
+    {
+      "tag": "Draw Bar Chart",
+      "patterns": [
+        "Draw bar chart",
+        "Draw a bar chart for the collection",
+        "Monitor collection with bar chart",
+        "Monitor collection using bar chart"
+      ],
+      "responses": [
+        "Bar Chart"
+      ]
+    },
+    {
+      "tag": "Draw Histogram",
+      "patterns": [
+        "Draw Histogram",
+        "Draw histogram for the collection",
+        "Monitor collection with Histogram"
+      ],
+      "responses": [
+        "Histogram"
+      ]
+    },
+    {
+      "tag": "Parse Data",
+      "patterns": [
+        "Parse Data",
+        "Data Parse",
+        "Parse data for the collection"
+      ],
+      "responses": [
+        "Parse"
+      ]
+    }
+  ]
+}

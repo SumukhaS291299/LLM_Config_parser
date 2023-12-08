@@ -1,0 +1,36 @@
+apiVersion: core/v1
+type: collector
+metadata:
+  name: AWSCollectionSumu123
+  namespace: default
+  resourceVersion: 1
+  tenant: public
+  displayLabel: Check
+spec:
+  subType: aws
+  enabled: true
+  collectionModes:
+    - collectionType: pull
+      dataType: metric
+      frequency: 600
+      backgroundJob: false
+    - collectionType: pull
+      dataType: discovery
+      frequency: 600
+      backgroundJob: false
+  context:
+    filterConfig:
+      matchRegex: false
+    metricConfig:
+      - ec2/.*
+      - vpc/.*
+      - vpn/.*
+      - ecs/.*
+      - s3/.*
+      - elb/.*
+    startTimeOffsetInSeconds: 300
+    requestTimeoutInSeconds: 300
+    appendConfigTags: true
+    granularity: 600
+  targets:
+    - TARGET

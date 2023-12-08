@@ -1,0 +1,75 @@
+apiVersion: core/v1
+type: credential
+metadata:
+  annotations: { }
+  description: Credential Metadata
+  displayLabel: CRED
+  name: CRED
+  namespace: default
+  resourceVersion: 1
+  tags:
+    env: dev
+  tenant: public
+spec:
+  context:
+    access_key_id: AKIA5J2WD3UR5FZH72F5
+    secret_access_key: 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
+  #    role_arn_1: arn:aws:iam::914471771427:role/Aditya_EC2_Role
+  subType: aws-access-key
+---
+apiVersion: core/v1
+type: target
+metadata:
+  name: TARGET
+  description: AWS Target
+  displayLabel: AWS Target
+  namespace: default
+  resourceVersion: 1
+  tenant: public
+spec:
+  subType: aws-region
+  endpoint: us-east-1
+  context:
+    region: us-east-1
+  credential: CRED
+# proxy:
+#    url: http://web-proxy.in.softwaregrp.net:8080/
+---
+apiVersion: core/v1
+type: collector
+metadata:
+  name: AWSCollectionSumu123
+  namespace: default
+  resourceVersion: 1
+  tenant: public
+  displayLabel: Check
+spec:
+  subType: aws
+  enabled: true
+  collectionModes:
+    - collectionType: pull
+      dataType: metric
+      frequency: 600
+      backgroundJob: false
+    - collectionType: pull
+      dataType: discovery
+      frequency: 600
+      backgroundJob: false
+  context:
+    filterConfig:
+      matchRegex: false
+    metricConfig:
+      - ec2/.*
+      - vpc/.*
+      - vpn/.*
+      - ecs/.*
+    startTimeOffsetInSeconds: 300
+    requestTimeoutInSeconds: 300
+    appendConfigTags: true
+    granularity: 600
+  targets:
+    - TARGET
+  # thresholds:
+  # - ec2CpuTh
+  #- TARGET2
+#ootb-cloud-aws-efs-performance

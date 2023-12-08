@@ -1,0 +1,24 @@
+apiVersion: core/v1
+type: target
+metadata:
+  name: TARGET
+  description: AWS Target
+  displayLabel: AWS Target
+  namespace: default
+  resourceVersion: 1
+  tenant: public
+spec:
+  subType: aws-region
+  endpoint: us-east-1
+  context:
+    region: us-east-1
+  credential: CRED
+  # proxy:
+  #  url: http://web-proxy.in.softwaregrp.net:8080/
+#  _______________
+#subType: azure
+#endpoint: ITOM-OpsBridgeMonitoringAZ-NonProd
+#context:
+#  #resourcegroup: AurigaUDGroup
+#  tenant_id: 6002e264-31f7-43d3-a51e-9ed1ba9ca689
+#credential: azure-credential-allservices-100

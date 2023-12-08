@@ -1,0 +1,187 @@
+ID: 835a2c3b-4ae2-4651-a7a6-d5070deecb94
+Name: SumukhaTestDemo
+v2:
+  - dataType: metric
+    collectionType: pull
+    jobType: recurring
+    data:
+      - jobUnitID: a41abb87-2741-423d-92ee-a97e245ecbd5
+        timestamp: 1699261200
+        totalResources: 923
+        durationMs: 561
+        state: Collection completed  on 06 Nov 23 14:30 IST
+        summary:
+          - resource: k8s_pod
+            status:
+              - count: 160
+                result: Metrics collected
+                state: succeeded
+              - count: 157
+                result: no metrics collected
+                state: succeeded
+          - resource: k8s_node
+            status:
+              - count: 4
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_persistent_volume_claim
+            status:
+              - count: 20
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_service
+            status:
+              - count: 118
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_replicaset
+            status:
+              - count: 140
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_persistent_volume
+            status:
+              - count: 23
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_endpoint
+            status:
+              - count: 118
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_deployment
+            status:
+              - count: 85
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_job
+            status:
+              - count: 17
+                result: Metrics collected
+                state: succeeded
+              - count: 20
+                result: no metrics collected
+                state: succeeded
+          - resource: k8s_ingress
+            status:
+              - count: 33
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_daemonset
+            status:
+              - count: 7
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_namespace
+            status:
+              - count: 3
+                result: Metrics collected
+                state: succeeded
+              - count: 4
+                result: no metrics collected
+                state: succeeded
+          - resource: k8s_statefulset
+            status:
+              - count: 11
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_cronjob
+            status:
+              - count: 2
+                result: Metrics collected
+                state: succeeded
+          - resource: k8s_cluster
+            status:
+              - count: 1
+                result: Metrics collected
+                state: succeeded
+  - dataType: discovery
+    collectionType: pull
+    jobType: recurring
+    data:
+      - jobUnitID: acaf2908-4a4d-4921-ab77-eac229f91f11
+        timestamp: 1699261323
+        totalResources: 937
+        durationMs: 1008
+        state: Discovery Completed on 06 Nov 23 14:32 IST
+        summary:
+          - resource: cronjob
+            status:
+              - count: 2
+                result: resources discovered
+                state: succeeded
+          - resource: cluster
+            status:
+              - count: 1
+                result: resources discovered
+                state: succeeded
+          - resource: job
+            status:
+              - count: 44
+                result: resources discovered
+                state: succeeded
+          - resource: persistent_volume
+            status:
+              - count: 23
+                result: resources discovered
+                state: succeeded
+          - resource: persistent_volume_claim
+            status:
+              - count: 20
+                result: resources discovered
+                state: succeeded
+          - resource: statefulset
+            status:
+              - count: 11
+                result: resources discovered
+                state: succeeded
+          - resource: service
+            status:
+              - count: 118
+                result: resources discovered
+                state: succeeded
+          - resource: replicaset
+            status:
+              - count: 140
+                result: resources discovered
+                state: succeeded
+          - resource: deployment
+            status:
+              - count: 85
+                result: resources discovered
+                state: succeeded
+          - resource: ingress
+            status:
+              - count: 33
+                result: resources discovered
+                state: succeeded
+          - resource: horizontalpodautoscaler
+            status:
+              - count: 0
+                result: no resources discovered
+                state: succeeded
+          - resource: node
+            status:
+              - count: 4
+                result: resources discovered
+                state: succeeded
+          - resource: daemonset
+            status:
+              - count: 7
+                result: resources discovered
+                state: succeeded
+          - resource: pod
+            status:
+              - count: 324
+                result: resources discovered
+                state: succeeded
+          - resource: namespace
+            status:
+              - count: 7
+                result: resources discovered
+                state: succeeded
+          - resource: endpoint
+            status:
+              - count: 118
+                result: resources discovered
+                state: succeeded
